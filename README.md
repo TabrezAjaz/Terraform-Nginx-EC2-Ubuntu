@@ -43,7 +43,31 @@ After teardown, `terraform state list` should be empty and the EC2 instance shou
 
 ## Evidence
 
-Screenshots of Terraform apply, the running EC2 instance, the custom Nginx page, and successful destroy are stored under `docs/screenshots/` after the verification run.
+The configuration was deployed and verified on 18 October 2026:
+
+- Ubuntu 20.04 AMI: `ami-06cc5ebfb8571a147`
+- Instance type: `t2.micro`
+- Default VPC: `vpc-0269aef3164a68a81`
+- EC2 instance: `i-0037a725e7f327d6e`
+- Public IP during verification: `3.6.90.5`
+- Custom page returned the exact required welcome text
+- Final teardown: `Destroy complete! Resources: 2 destroyed.`
+
+### Terraform Apply
+
+![Terraform apply evidence](docs/screenshots/01-terraform-apply.png)
+
+### Custom Nginx Page
+
+![Custom Nginx page](docs/screenshots/02-nginx-live.png)
+
+### Terraform Destroy
+
+![Terraform destroy evidence](docs/screenshots/03-terraform-destroy.png)
+
+### Public GitHub Repository
+
+![GitHub repository](docs/screenshots/04-github-repository.png)
 
 ## Security
 

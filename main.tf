@@ -27,10 +27,20 @@ data "aws_vpc" "default" {
   default = true
 }
 
-data "aws_subnets" "default" {
+data "aws_subnet" "default_1a" {
   filter {
     name   = "vpc-id"
     values = [data.aws_vpc.default.id]
+  }
+
+  filter {
+    name   = "availability-zone"
+    values = ["${var.aws_region}a"]
+  }
+
+  filter {
+    name   = "default-for-az"
+    values = ["true"]
   }
 }
 
@@ -89,7 +99,7 @@ resource "aws_security_group" "nginx" {
 resource "aws_instance" "nginx" {
   ami                         = data.aws_ami.ubuntu_2004.id
   instance_type               = var.instance_type
-  subnet_id                   = sort(data.aws_subnets.default.ids)[0]
+  subnet_id                   = data.aws_subnet.default_1a.id
   vpc_security_group_ids      = [aws_security_group.nginx.id]
   key_name                    = var.key_name
   associate_public_ip_address = true
