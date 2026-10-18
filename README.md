@@ -53,8 +53,8 @@ The configuration was deployed and verified on 18 October 2026:
 - Ubuntu 20.04 AMI: `ami-06cc5ebfb8571a147`
 - Instance type: `t2.micro`
 - Default VPC: `vpc-0269aef3164a68a81`
-- EC2 instance: `i-0037a725e7f327d6e`
-- Public IP during verification: `3.6.90.5`
+- EC2 instance: `i-0ee1a02421fccb5e3`
+- Public IP during verification: `13.206.95.109`
 - Custom page returned the exact required welcome text
 - Final teardown: `Destroy complete! Resources: 2 destroyed.`
 

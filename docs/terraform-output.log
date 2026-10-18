@@ -1,0 +1,4 @@
+default_vpc_id = "vpc-0269aef3164a68a81"
+instance_id = "i-0ee1a02421fccb5e3"
+nginx_url = "http://13.206.95.109"
+public_ip = "13.206.95.109"
