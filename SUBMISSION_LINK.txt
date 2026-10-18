@@ -4,4 +4,7 @@ Submitted by: Tabrez Ajaz
 GitHub Repository:
 https://github.com/TabrezAjaz/Terraform-Nginx-EC2-Ubuntu
 
+Submission Report:
+Tabrez_Ajaz_EC2_Nginx_Terraform_Report.pdf
+
 The short-lived AWS server will be destroyed after genuine evidence is captured to prevent ongoing charges.

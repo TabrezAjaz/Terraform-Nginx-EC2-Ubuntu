@@ -2,6 +2,11 @@
 
 This repository completes the HeroVired assignment **EC2 Nginx Deployment with Terraform**. It uses Terraform CLI to launch exactly one Ubuntu 20.04 LTS `t2.micro` EC2 instance in the existing AWS default VPC, install Nginx through `user_data`, publish a custom page, output the public IP, and remove all created resources with `terraform destroy`.
 
+## Submission Report
+
+- [Polished HTML implementation report](docs/Implementation_Report.html)
+- [Submission-ready PDF report](Tabrez_Ajaz_EC2_Nginx_Terraform_Report.pdf)
+
 ## Resources
 
 - Existing default VPC and one existing default subnet, queried through data sources
